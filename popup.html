@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LMS Feedback</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <h1>LMS Feedback</h1>
+
+  <label for="studentName">Nome do aluno:</label>
+  <input id="studentName" placeholder="Ex.: Evaldo" />
+
+  <fieldset>
+    <legend>Status</legend>
+    <label><input type="radio" name="status" value="aprovado" checked /> Aprovado</label>
+    <label><input type="radio" name="status" value="reprovado" /> Reprovado</label>
+  </fieldset>
+
+  <section>
+    <label>CBAs:</label>
+    <button id="btnFetchCBAs" type="button">Coletar da página</button>
+    <textarea id="cbas" rows="8" placeholder="As CBAs aparecerão aqui..."></textarea>
+  </section>
+
+  <button id="btnInserir">Inserir feedback</button>
+  <p id="msg"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>

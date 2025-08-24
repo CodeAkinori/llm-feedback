@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "LMS Feedback Basic)",
+  "version": "0.0.1",
+  "description": "Insere um template de feedback no campo de mensagem da LMS.",
+  "action": {
+    "default_title": "Inserir feedback",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
