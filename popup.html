@@ -19,12 +19,15 @@
   </fieldset>
 
   <section>
-    <label>CBAs:</label>
-    <button id="btnFetchCBAs" type="button">Coletar da página</button>
-    <textarea id="cbas" rows="8" placeholder="As CBAs aparecerão aqui..."></textarea>
+    <div class="row">
+      <label>CBAs (somente para a LLM):</label>
+      <button id="btnFetchCBAs" type="button" title="Coletar automaticamente da página">Coletar da página</button>
+    </div>
+    <textarea id="cbas" rows="8" placeholder="As CBAs aparecerão aqui... (não serão incluídas no feedback)"></textarea>
+    <small>Obs.: as CBAs são usadas apenas para gerar o feedback; não serão coladas no texto final.</small>
   </section>
 
-  <button id="btnInserir">Inserir feedback</button>
+  <button id="btnGenerate">Gerar feedback com LLM</button>
   <p id="msg"></p>
 
   <script src="popup.js"></script>
