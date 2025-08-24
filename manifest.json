@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
   "name": "LMS Feedback (LLM Local)",
-  "version": "0.1.0",
-  "description": "Gera feedback aprovado/reprovado via LLM local (LM Studio) e insere na LMS.",
+  "version": "0.2.0",
+  "description": "Gera feedback automático (Aprovado/Reprovado) via LLM local, com suporte a comentários extras e links úteis.",
   "action": {
     "default_title": "Gerar feedback",
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
   },
   "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": [
