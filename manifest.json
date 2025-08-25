@@ -1,11 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "LMS Feedback Basic)",
-  "version": "0.0.1",
-  "description": "Insere um template de feedback no campo de mensagem da LMS.",
+  "name": "LMS Feedback (LLM Local)",
+  "version": "0.1.0",
+  "description": "Gera feedback aprovado/reprovado via LLM local (LM Studio) e insere na LMS.",
   "action": {
-    "default_title": "Inserir feedback",
+    "default_title": "Gerar feedback",
     "default_popup": "popup.html"
   },
-  "permissions": ["activeTab", "scripting"]
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": [
+    "http://26.140.166.251:1234/*",
+    "http://localhost:1234/*"
+  ]
 }
